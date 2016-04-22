@@ -1,0 +1,9 @@
+<parser id="css_function" displayName="CSS source" commentExpr="(/\*[^#]*?\*/)">
+	<function
+	    mainExpr="^([^{/]*\{)|([/][*] #+( [\w]*\b)+)"
+		displayMode="$functionName">
+		<functionName>
+			<nameExpr expr="(^[^\s}][^{]*\{$)|^/\* #+( [\w]*\b)+"/>
+		</functionName>
+	</function>
+</parser>
